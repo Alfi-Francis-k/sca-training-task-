@@ -1,0 +1,114 @@
+{
+    "name": "custom",
+    "fantasyName": "customfield",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=25.1.0",
+        "SCS": ">=25.1.0"
+    },
+    "version": "1.0.0",
+    "description": "customfield",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/customfields.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/customfields/Configuration/customfields.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/customfields/Templates/jj_custom_customfields.tpl",
+                    "Modules/customfields/Templates/jj_product_details_full.tpl",
+                    "Modules/customfields/Templates/customfields_delivery.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/customfields/Templates/jj_custom_customfields.tpl",
+                    "Modules/customfields/Templates/jj_product_details_full.tpl",
+                    "Modules/customfields/Templates/customfields_delivery.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/customfields/Templates/jj_custom_customfields.tpl",
+                    "Modules/customfields/Templates/jj_product_details_full.tpl",
+                    "Modules/customfields/Templates/customfields_delivery.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/customfields/Sass/_custom-customfields.scss",
+            "myaccount": "Modules/customfields/Sass/_custom-customfields.scss",
+            "checkout": "Modules/customfields/Sass/_custom-customfields.scss"
+        },
+        "files": [
+            "Modules/customfields/Sass/_custom-customfields.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/customfields/JavaScript/JJ.custom.customfields.js",
+            "myaccount": "Modules/customfields/JavaScript/JJ.custom.customfields.js",
+            "checkout": "Modules/customfields/JavaScript/JJ.custom.customfields.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.js",
+                    "Modules/customfields/JavaScript/customfields.View.js",
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.Model.js",
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.SS2Model.js",
+                    "Modules/customfields/JavaScript/ProductDetailsFull.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.js",
+                    "Modules/customfields/JavaScript/customfields.View.js",
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.Model.js",
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.SS2Model.js",
+                    "Modules/customfields/JavaScript/ProductDetailsFull.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.js",
+                    "Modules/customfields/JavaScript/customfields.View.js",
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.Model.js",
+                    "Modules/customfields/JavaScript/JJ.custom.customfields.SS2Model.js",
+                    "Modules/customfields/JavaScript/ProductDetailsFull.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/customfields/SuiteScript/JJ.custom.customfields.js",
+        "files": [
+            "Modules/customfields/SuiteScript/JJ.custom.customfields.js",
+            "Modules/customfields/SuiteScript/customfields.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/customfields/SuiteScript2/customfields.Service.ss"
+        ]
+    }
+}

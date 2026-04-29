@@ -1,0 +1,122 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+// .customfields-info-card {
+//     @extend .info-card;
+// }
+
+// .customfields-info-card-content {
+//     @extend .info-card-content;
+//     color: $sc-color-secondary;
+//     font-weight: bold;
+// }
+
+.customfields-info-card {
+  @extend .info-card;
+
+  &__content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+  }
+
+ .close {
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 50%;          // fully rounded (circle)
+    background-color: $sc-color-secondary;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: darken($sc-color-secondary, 10%);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+/* CUSTOM DELIVERY SECTION BEM STYLES */
+.customfields-delivery {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid $sc-color-theme-border;
+  border-radius: $sc-border-radius;
+  background-color: $sc-color-theme-background;
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  &__info {
+    margin-bottom: 5px;
+
+    strong {
+      color: $sc-color-primary;
+    }
+  }
+
+  &__note {
+    margin-bottom: 10px;
+    color: $sc-color-secondary;
+  }
+
+  &__form-group {
+    margin-top: 10px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: $sc-color-copy;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $sc-color-theme-border;
+    border-radius: $sc-border-radius;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-color: $sc-color-primary;
+    }
+  }
+
+  &__button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: $sc-color-primary;
+    color: #fff;
+    border: none;
+    border-radius: $sc-border-radius;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: darken($sc-color-primary, 10%);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
