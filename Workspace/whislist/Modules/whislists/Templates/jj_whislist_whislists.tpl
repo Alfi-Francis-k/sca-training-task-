@@ -1,3 +1,21 @@
+<style>
+    /* ONLY hide the button when it is inside our custom heart dropdown */
+    .wishlist-dropdown-container .product-list-control-button-wishlist,
+    .wishlist-dropdown-container .product-list-control-button-move {
+        display: none !important;
+    }
+
+    /* Style the dropdown menu to be clean */
+    .wishlist-dropdown-container .product-list-control-dropdown {
+        display: block !important;
+        position: static !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+        padding: 10px !important;
+        border-radius: 4px !important;
+    }
+</style>
+
 <div class="wishlist-integrated-container" style="position: relative; display: inline-block; width: 100%; text-align: center;">
 
     {{!-- 1. HEART ICON (VISIBLE UI) --}}

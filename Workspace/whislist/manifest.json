@@ -16,36 +16,23 @@
         },
         "fonts": {
             "files": []
-        },
-        "services": {
-            "files": [
-                "services/whislists.Service.ss"
-            ]
         }
-    },
-    "configuration": {
-        "files": [
-            "Modules/whislists/Configuration/whislists.json"
-        ]
     },
     "templates": {
         "application": {
             "shopping": {
                 "files": [
-                    "Modules/whislists/Templates/jj_whislist_whislists.tpl",
-                    "Modules/whislists/Templates/jj_product_list_control.tpl"
+                    "Modules/whislists/Templates/jj_whislist_whislists.tpl"
                 ]
             },
             "myaccount": {
                 "files": [
-                    "Modules/whislists/Templates/jj_whislist_whislists.tpl",
-                    "Modules/whislists/Templates/jj_product_list_control.tpl"
+                    "Modules/whislists/Templates/jj_whislist_whislists.tpl"
                 ]
             },
             "checkout": {
                 "files": [
-                    "Modules/whislists/Templates/jj_whislist_whislists.tpl",
-                    "Modules/whislists/Templates/jj_product_list_control.tpl"
+                    "Modules/whislists/Templates/jj_whislist_whislists.tpl"
                 ]
             }
         }
@@ -70,35 +57,22 @@
             "shopping": {
                 "files": [
                     "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
-                    "Modules/whislists/JavaScript/whislists.View.js",
-                    "Modules/whislists/JavaScript/JJ.whislist.whislists.Model.js",
-                    "Modules/whislists/JavaScript/JJ.whislist.whislists.SS2Model.js"
+                    "Modules/whislists/JavaScript/whislists.View.js"
                 ]
             },
             "myaccount": {
                 "files": [
                     "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
-                    "Modules/whislists/JavaScript/whislists.View.js",
-                    "Modules/whislists/JavaScript/JJ.whislist.whislists.Model.js",
-                    "Modules/whislists/JavaScript/JJ.whislist.whislists.SS2Model.js"
+                    "Modules/whislists/JavaScript/whislists.View.js"
                 ]
             },
             "checkout": {
                 "files": [
                     "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
-                    "Modules/whislists/JavaScript/whislists.View.js",
-                    "Modules/whislists/JavaScript/JJ.whislist.whislists.Model.js",
-                    "Modules/whislists/JavaScript/JJ.whislist.whislists.SS2Model.js"
+                    "Modules/whislists/JavaScript/whislists.View.js"
                 ]
             }
         }
-    },
-    "ssp-libraries": {
-        "entry_point": "Modules/whislists/SuiteScript/JJ.whislist.whislists.js",
-        "files": [
-            "Modules/whislists/SuiteScript/JJ.whislist.whislists.js",
-            "Modules/whislists/SuiteScript/whislists.ServiceController.js"
-        ]
     },
     "suitescript2": {
         "files": [
