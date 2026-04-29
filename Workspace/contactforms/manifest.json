@@ -1,0 +1,110 @@
+{
+    "name": "contactforms",
+    "fantasyName": "contactform",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=25.1.0",
+        "SCS": ">=25.1.0"
+    },
+    "description": "new contact fomr",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/contactformm.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/contactformm/Configuration/contactformm.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/contactformm/Sass/_contactforms-contactformm.scss",
+            "myaccount": "Modules/contactformm/Sass/_contactforms-contactformm.scss",
+            "checkout": "Modules/contactformm/Sass/_contactforms-contactformm.scss"
+        },
+        "files": [
+            "Modules/contactformm/Sass/_contactforms-contactformm.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/contactformm/Templates/jj_contactforms_contactformm.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/contactformm/Templates/jj_contactforms_contactformm.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/contactformm/Templates/jj_contactforms_contactformm.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.js",
+            "myaccount": "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.js",
+            "checkout": "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.js",
+                    "Modules/contactformm/JavaScript/contactformm.View.js",
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.Model.js",
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.SS2Model.js",
+                    "Modules/contactformm/JavaScript/contactform.Router.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.js",
+                    "Modules/contactformm/JavaScript/contactformm.View.js",
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.Model.js",
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.SS2Model.js",
+                    "Modules/contactformm/JavaScript/contactform.Router.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.js",
+                    "Modules/contactformm/JavaScript/contactformm.View.js",
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.Model.js",
+                    "Modules/contactformm/JavaScript/JJ.contactforms.contactformm.SS2Model.js",
+                    "Modules/contactformm/JavaScript/contactform.Router.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/contactformm/SuiteScript/JJ.contactforms.contactformm.js",
+        "files": [
+            "Modules/contactformm/SuiteScript/JJ.contactforms.contactformm.js",
+            "Modules/contactformm/SuiteScript/contactformm.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\contactforms",
+    "suitescript2": {
+        "files": [
+            "Modules/contactformm/SuiteScript2/contactformm.Service.ss"
+        ]
+    }
+}
