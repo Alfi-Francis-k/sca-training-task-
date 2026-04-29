@@ -1,0 +1,108 @@
+{
+    "name": "whislist",
+    "fantasyName": "whislistt",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=25.1.0",
+        "SCS": ">=25.1.0"
+    },
+    "version": "1.0.0",
+    "description": "my whishlist",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/whislists.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/whislists/Configuration/whislists.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/whislists/Templates/jj_whislist_whislists.tpl",
+                    "Modules/whislists/Templates/jj_product_list_control.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/whislists/Templates/jj_whislist_whislists.tpl",
+                    "Modules/whislists/Templates/jj_product_list_control.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/whislists/Templates/jj_whislist_whislists.tpl",
+                    "Modules/whislists/Templates/jj_product_list_control.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/whislists/Sass/_whislist-whislists.scss",
+            "myaccount": "Modules/whislists/Sass/_whislist-whislists.scss",
+            "checkout": "Modules/whislists/Sass/_whislist-whislists.scss"
+        },
+        "files": [
+            "Modules/whislists/Sass/_whislist-whislists.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
+            "myaccount": "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
+            "checkout": "Modules/whislists/JavaScript/JJ.whislist.whislists.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
+                    "Modules/whislists/JavaScript/whislists.View.js",
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.Model.js",
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
+                    "Modules/whislists/JavaScript/whislists.View.js",
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.Model.js",
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.js",
+                    "Modules/whislists/JavaScript/whislists.View.js",
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.Model.js",
+                    "Modules/whislists/JavaScript/JJ.whislist.whislists.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/whislists/SuiteScript/JJ.whislist.whislists.js",
+        "files": [
+            "Modules/whislists/SuiteScript/JJ.whislist.whislists.js",
+            "Modules/whislists/SuiteScript/whislists.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/whislists/SuiteScript2/whislists.Service.ss"
+        ]
+    }
+}

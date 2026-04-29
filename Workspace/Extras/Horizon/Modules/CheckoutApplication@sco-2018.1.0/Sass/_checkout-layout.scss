@@ -1,0 +1,39 @@
+/* Edited for Horizon Theme */
+
+.checkout-layout {
+	@extend %sc-layout;
+}
+
+.checkout-layout-header {
+	@include box-shadow(3px 0px 6px $sc-color-secondary);
+	margin-bottom: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: $sc-margin-lv8;
+	}
+}
+
+.checkout-layout-content, .checkout-layout-notifications{
+	@extend .container;
+	padding-bottom: $sc-padding-lv2 !important;
+    & .contact-us-container {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.checkout-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.checkout-layout-breadcrumb{
+	& .breadcrumb-container {
+        min-height: 80px;
+    }
+}
+
+.checkout-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+

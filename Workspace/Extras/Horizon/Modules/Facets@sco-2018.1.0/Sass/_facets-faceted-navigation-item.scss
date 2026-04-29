@@ -1,0 +1,65 @@
+// Edited for Horizon Theme
+
+.facets-faceted-navigation-item-icon-ok {
+    @extend .fa;
+    @extend .fa-plus !optional;
+}
+
+.facets-faceted-navigation-item-icon-plus {
+    @extend .fa;
+    @extend .fa-plus !optional;
+}
+
+.facets-faceted-navigation-item-optionlist-extra-button {
+	@extend .button-tertiary !optional;
+	@extend .button-small;
+}
+
+.facets-faceted-navigation-item-facet-group {
+    @extend .facets-faceted-navigation-facet-group;
+}
+
+.facets-faceted-navigation-item-facet-group-expander {
+	@extend .facets-faceted-navigation-facet-group-expander;
+}
+
+.facets-faceted-navigation-item-facet-group-expander-icon {
+	@extend .facets-faceted-navigation-facet-group-expander-icon;
+}
+
+.facets-faceted-navigation-item-facet-group-wrapper,
+.facets-faceted-navigation-item-color-facet-group-wrapper {
+	padding-left: $sc-padding-lv3;
+	@media (min-width: $screen-md-min) {
+		padding: $sc-padding-lv2;
+		display: none;
+		background: $sc-neutral-shade-0;
+		width: 100%;
+		position: absolute;
+		z-index: 100;
+		right: 0;
+		border: 1px solid $sc-color-theme-content-background;
+		height: auto;
+	}
+}
+
+.facets-faceted-navigation-item-facet-group-title {
+	@extend .facets-faceted-navigation-facet-group-title;
+}
+
+.facets-faceted-navigation-item-facet-option {
+	@extend .facets-faceted-navigation-facet-option;
+}
+
+.facets-faceted-navigation-item-facet-option-circle {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+
+.facets-faceted-navigation-item-alt-caption {
+	display:none;
+}
+
+.facets-faceted-navigation-item-facet-multi {
+    @extend .input-checkbox !optional;
+}
+

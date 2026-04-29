@@ -1,0 +1,24 @@
+// Add space between header and content except in home page, item listing
+#content {
+    padding-top: $sc-margin-base * 8;
+
+    .home-page, .facets-facet-browse {
+        margin-top: -$sc-margin-base * 8;
+    }
+}
+
+/* CMS CONTENT */
+.cms-content-text {
+    padding: $sc-padding-lv2 0;
+}
+
+.banner-breadcrumb-top {
+    @media (min-width: $screen-md-min) {
+        //padding-top: $sc-header-height + $sc-main-navigation-height;
+    }
+
+    .theme-has-static-header & {
+        padding-top: 0;
+    }
+}
+

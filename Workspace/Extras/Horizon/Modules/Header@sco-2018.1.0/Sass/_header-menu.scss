@@ -1,0 +1,233 @@
+// Edited for Horizon Theme
+
+// header myaccount menu
+.header-menu-myaccount {
+    font-size: $sc-font-size-s; // was $sc-small-font-size;
+}
+
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+    margin: 0 $sc-margin-lv2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+        margin: 0 $sc-margin-lv4;
+    }
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+    float: right;
+    order: 2;
+    padding-right: $sc-padding-lv2;
+}
+
+.header-menu-search-link {
+    @extend .middle-title-navigable !optional;
+    font-size: $sc-font-size-xxl;
+    background: none;
+    padding: $sc-padding-lv2;
+    cursor: pointer;
+    position: relative;
+    line-height: 20px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    @media (min-width: $screen-md-min) {
+        line-height: 65px;
+        margin-top: 0;
+        border: none;
+    }
+}
+.header-menu-search-link:focus {
+    outline: none;
+}
+.header-menu-search-link.active {
+    color: $sc-color-copy;
+}
+
+.header-menu-search-icon {
+    @extend .fa;
+    @extend %fa-search;
+}
+
+.header-menu-searchmobile-link {
+    margin-right: 0px;
+    cursor: pointer;
+    background: none;
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+    display: none;
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+        min-height: $sc-main-navigation-height;
+        text-align: center;
+        margin-left: $sc-main-navigation-left-margin;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        margin-left: 0;
+    }
+}
+
+.header-menu-level1 > li {
+    display: inline-block;
+}
+
+.header-menu-level1-anchor {
+    display: block;
+    position: relative;
+    height: $sc-main-navigation-height;
+    line-height: $sc-main-navigation-height;
+    padding: 0 $sc-padding-lv2;
+    margin-right: $sc-main-navigation-link-margin-right;
+    color: $sc-main-navigation-link-color;
+    font-weight: $sc-font-weight-semibold;
+    text-transform: $sc-main-navigation-link-text-transform;
+    letter-spacing: $sc-main-navigation-link-letter-spacing;
+
+    &:hover, &:focus{
+		color: $sc-main-navigation-link-hover-color;
+    }
+
+    &:active {
+        color: $sc-main-navigation-link-active-color;
+    }
+}
+
+.open .header-menu-level1-anchor{
+    color: $sc-main-navigation-link-hover-color;
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor{
+    @extend .header-menu-level1-anchor;
+}
+
+//maxi menu level 2
+.header-menu-back {
+    display: none;
+}
+
+.header-menu-level2 {
+    height: auto; // add 10 for the horizontal scrollbar
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow: hidden;
+    overflow-x: visible; // display horizontal scrollbar
+    background-color: $sc-main-navigation-submenu-background-color;
+}
+
+.header-menu-level2 > li {
+    box-sizing: content-box;
+    width: auto;
+    padding: $sc-main-navigation-submenu-padding;
+    height: auto /*($sc-main-navigation-submenu-height - $sc-main-navigation-submenu-padding) + 10*/; // add 10 for the horizontal scrollbar
+
+    border-right: $sc-main-navigation-submenu-border-width solid $sc-main-navigation-submenu-border-color;
+    min-width: 20%;
+    max-width: 20%;
+    width: 200px;
+
+    //@extend .animate;
+}
+
+.header-menu-level2-anchor {
+    text-transform: $sc-main-navigation-submenu-heading-text-transform;
+    text-decoration: $sc-main-navigation-submenu-heading-text-decoration;
+    font-weight: $sc-font-weight-semibold;
+    color: $sc-main-navigation-submenu-heading-color;
+    padding-bottom: $sc-padding-lv1;
+    margin-bottom: $sc-margin-lv2;
+    display: block;
+    text-align: left;
+    min-height: $sc-main-navigation-submenu-heading-height;
+
+    &:hover {
+        color: $sc-main-navigation-submenu-heading-hover-color;
+    }
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+    display: block;
+    text-transform: $sc-main-navigation-submenu-link-text-transform;
+    padding: 0;
+    color: $sc-main-navigation-submenu-link-color;
+    text-align: left;
+
+    &:hover {
+        color: $sc-main-navigation-submenu-link-hover-color;
+    }
+
+    &:active, &.active {
+        color: $sc-main-navigation-submenu-link-active-color;
+    }
+}
+
+.header-menu-categories-thumbnail-wrapper {
+    position: relative; // necessary for header-menu-level3 to achieve full width
+}
+
+// Categories Animation
+// extended by .header-menu-level2
+.animate {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon, .header-menu-pop-icon {
+    display: none;
+}
+
+.header-menu-level-container {
+    background-color: rgba($sc-theme-color-overlay, 0.7);
+    position: absolute;
+    //top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1003;
+    @include box-shadow(0 6px 12px transparentize($sc-theme-color-overlay, 1-0.175));
+
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+    opacity: 0;
+    height: auto;
+    overflow: hidden;
+    visibility: hidden;
+
+    > li {
+        @extend .container;
+    }
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+    display: block;
+    opacity: 1;
+    min-height: auto; // add 10 for the horizontal scrollbar
+    visibility: visible;
+}
+
+.categories-thumbnail {
+    display: inline-block;
+
+}
+

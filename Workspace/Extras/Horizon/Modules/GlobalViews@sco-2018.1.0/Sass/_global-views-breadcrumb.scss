@@ -1,0 +1,110 @@
+// Edited for Horizon Theme
+
+.global-views-breadcrumb-item-active {
+	@extend .breadcrumb-item-active;
+	margin: auto;
+    color: $sc-color-breadcrumb-active;
+
+    @media (min-width: $screen-xs-min){
+        font-size: $sc-font-size-xxl;
+        padding:0px $sc-padding-lv2;
+    }
+}
+
+.global-views-breadcrumb-item {
+	@extend .breadcrumb-item;
+	margin: auto;
+
+    @media (min-width: $screen-xs-min){
+        padding:0px $sc-padding-lv2;
+    }
+}
+
+.global-views-breadcrumb-divider {
+	@extend .breadcrumb-divider;
+	margin: auto;
+}
+
+.global-views-breadcrumb {
+	@extend .breadcrumb;
+	font-size:14px;
+	background-color: $sc-color-breadcrumb-background;
+    height: 35px;
+    margin-bottom: 0;
+    display: flex;
+    padding: 0 10px;
+    float: left;
+    bottom: 0;
+    @media (min-width: $screen-xs-min){
+        height: 50px;
+    }
+    @media (min-width: $screen-md-min){
+        position: absolute;
+    }
+}
+
+.global-views-breadcrumb-categories {
+    @extend .breadcrumb;
+    font-size:14px;
+    background-color: $sc-color-breadcrumb-background;
+    height: 70px;
+    margin-bottom: 0;
+    display: inline-flex;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+
+    @media (max-width: $screen-sm) {
+        position: relative;
+        height: 50px;
+
+        li {
+            display: none;
+
+            &:last-child {
+                display: inline;
+            }
+        }
+    }
+}
+.global-views-breadcrumb-divider-icon {
+	@extend .breadcrumb-divider-icon;
+	color: $sc-color-breadcrumb-separator;
+}
+
+.category-pusher {
+	  @media (min-width: $screen-md-min){
+			//padding-top: 209px;
+		}
+}
+
+.breadcrumb-container {
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 1;
+    //min-height: 80px;
+
+    @media (min-width: $screen-md-min){
+			margin-bottom: 0;
+			float: left;
+			clear: both;
+			padding-top: 100px;
+
+			width: 100%;
+			max-width: 1600px;
+    }
+}
+
+.myaccount-layout-breadcrumb .breadcrumb-container {
+    //min-height: auto !important;
+
+    @media (min-width: $screen-md-min){
+        //min-height: 80px !important;
+    }
+}
+
+.breadcrumb-image {
+    display: flex;
+    width: 100%;
+}
+

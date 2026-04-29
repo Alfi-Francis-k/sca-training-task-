@@ -1,0 +1,18 @@
+// Edited for Horizon Theme
+
+.header-simplified-header{
+	height: auto;
+	background-color: $sc-main-navigation-background-color;
+	padding: 20px 0;
+}
+
+.header-simplified-header-logo{
+	text-align: center;
+	margin: 0;
+
+	.header-logo-image{
+		width: auto;
+		max-width: 300px;
+	}
+}
+

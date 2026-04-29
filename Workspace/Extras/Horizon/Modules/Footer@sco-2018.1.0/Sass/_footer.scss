@@ -1,0 +1,221 @@
+// Edited for Horizon Theme
+
+.footer-wrapper {
+    background: $sc-footer-background-color;
+    color: $sc-footer-text-color;
+    padding-top: $sc-margin-lv3;
+    background-size: cover;
+    margin-bottom: -20px;
+}
+.footer-content {
+    @extend .container-fluid;
+    @extend .row;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-desktop) {
+        padding-top: $sc-padding-base * 14;
+        display: block;
+    }
+
+    &.footer-simplified {
+        @media (min-width: $screen-desktop) {
+            padding-top: 0;
+        }
+    }
+}
+
+.footer-content-nav {
+    @extend .col-xs-12;
+    @extend .col-md-8;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $sc-margin-lv5;
+    order: 2;
+    justify-content: center;
+
+    @media (min-width: $screen-desktop) {
+        margin-top: $sc-margin-base * 14;
+        justify-content: flex-start;
+        margin-top: 0;
+        order: 1;
+    }
+}
+.footer-content-nav-list {
+    @extend .col-xs-6;
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $sc-margin-lv4;
+
+    @media (min-width: $screen-sm-min) {
+        float: left;
+        width: auto;
+        border: none;
+        margin-bottom: $sc-margin-lv8;
+    }
+
+}
+
+.footer-content-nav-list > li {
+    font-size: $sc-footer-link-size-mobile;
+    padding-bottom: $sc-padding-base;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm-min) {
+        display: list-item !important;
+        font-size: $sc-footer-link-size;
+        height: auto !important;
+        visibility: visible !important;
+    }
+}
+
+.footer-column-heading {
+    color: $sc-footer-headings-color;
+    display: list-item;
+    font-size: $sc-footer-headings-size;
+    text-transform: uppercase;
+}
+
+.footer-column-link {
+    color: $sc-footer-link-color;
+    &:hover,
+    &:focus {
+        color: $sc-footer-link-color-hover;
+    }
+}
+
+.footer-content-newsletter {
+    @extend .col-xs-12;
+    @extend .col-md-4;
+
+    float: none;
+    font-size: $sc-font-size-l; // was $sc-h3-font-size;
+    text-align: center;
+
+    & p {
+        padding: $sc-padding-lv2;
+    }
+    & span {
+        color: $sc-color-primary;
+        font-weight: 700;
+    }
+    & h4,
+    & h5 {
+        color: $sc-footer-fields-text-color;
+    }
+    & .newsletter-suscription-form-input { // yes there's a typo in the template
+        background-color: $sc-footer-fields-background-color;
+        border: 1px solid $sc-footer-fields-border-color;
+        color: $sc-footer-fields-text-color;
+        margin-bottom: 0;
+
+        @include placeholder {
+            color: $sc-footer-fields-text-color;
+        }
+    }
+    & .newsletter-subscription-form-button-subscribe {
+        background: $sc-footer-buttons-background-color;
+        color: $sc-footer-buttons-text-color;
+        border: 1px solid $sc-footer-buttons-border-color;
+        //border-radius: $sc-footer-buttons-border-radius;
+        font-weight: bold;
+        font-size: $sc-font-size-m;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        float: right;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        padding: 0;
+    }
+
+    @media (min-width: $screen-desktop) {
+        text-align: left;
+        padding-bottom: $sc-padding-base * 14;
+        float: right;
+    }
+}
+
+.footer-content-copyright {
+    @extend .col-md-6;
+    text-align: center;
+    color: $sc-footer-copyright-text-color;
+    @media (min-width: $screen-md-min) {
+		text-align: left;
+	}
+}
+
+.footer-extra-info {
+    @extend .col-md-6;
+    text-align: center;
+
+    span:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    @media (min-width: $screen-md-min) {
+		text-align: right;
+	}
+}
+
+.footer-content-bottom {
+    @extend .col-md-12;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+    text-align: center;
+    order: 3;
+    @media (min-width: $screen-md-min) {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+
+// Social Media Links
+.footer-social {
+    margin-bottom: $sc-margin-lv4;
+}
+
+.footer-content-social-list {
+    margin-top: 10px;
+
+    & > li {
+        flex: 0;
+        display: inline-block;
+        margin-right: 20px;
+        @media (min-width: $screen-sm-min) {
+            flex: 1;
+        }
+    }
+
+    & > li:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        color: $sc-footer-link-color;
+        display: block;
+        font-size: $sc-font-size-xxxl;
+    }
+
+    a:hover,
+    a:focus {
+        color: $sc-footer-link-color-hover;
+    }
+
+}
+
+.footer-content-social-icon {
+    /*width: 34px;
+    height: 34px;
+    text-align: center;
+    padding-top: 8px;*/
+}

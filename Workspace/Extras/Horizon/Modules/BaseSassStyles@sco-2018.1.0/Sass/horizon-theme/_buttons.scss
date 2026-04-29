@@ -1,0 +1,127 @@
+// Primary button variables
+$sc-button-primary-background-color: $sc-color-primary; /* editable({"type": "color", "label": "Primary button background color"}) */
+$sc-button-primary-text-color: white; /* editable({"type": "color", "label": "Primary button text color"}) */
+$sc-button-primary-border-color: $sc-button-primary-background-color; /* editable({"type": "color", "label": "Primary button border color"}) */
+$sc-button-primary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Primary button border radius"}) */
+$sc-button-primary-disabled-background-color: lighten($sc-color-primary, 18);
+$sc-button-primary-disabled-border-color: $sc-button-primary-disabled-background-color;
+
+$sc-button-primary-hover-background-color: saturate(lighten($sc-button-primary-background-color, 4), 10); /* editable({"type": "color", "label": "Primary button hover background color"}) */
+$sc-button-primary-hover-text-color: white; /* editable({"type": "color", "label": "Primary button hover text color"}) */
+$sc-button-primary-hover-border-color: $sc-button-primary-hover-background-color; /* editable({"type": "color", "label": "Primary button hover border color"}) */
+
+$sc-button-primary-active-background-color: desaturate(darken($sc-button-primary-background-color, 5), 10); /* editable({"type": "color", "label": "Primary button active background color"}) */
+$sc-button-primary-active-text-color: white; /* editable({"type": "color", "label": "Primary button active text color"}) */
+$sc-button-primary-active-border-color: $sc-button-primary-active-background-color; /* editable({"type": "color", "label": "Primary button active border color"}) */
+
+$sc-button-primary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Primary button text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+
+// Secondary button variables
+$sc-button-secondary-background-color: $sc-color-senary; /* editable({"type": "color", "label": "Secondary button background color"}) */
+$sc-button-secondary-text-color: white; /* editable({"type": "color", "label": "Secondary button text color"}) */
+$sc-button-secondary-border-color: $sc-button-secondary-background-color; /* editable({"type": "color", "label": "Secondary button border color"}) */
+$sc-button-secondary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Secondary button border radius"}) */
+
+$sc-button-secondary-hover-background-color: saturate(lighten($sc-color-secondary, 4), 4); /* editable({"type": "color", "label": "Secondary button hover background color"}) */
+$sc-button-secondary-hover-text-color: white; /* editable({"type": "color", "label": "Secondary button hover text color"}) */
+$sc-button-secondary-hover-border-color: $sc-button-secondary-hover-background-color; /* editable({"type": "color", "label": "Secondary button hover border color"}) */
+
+$sc-button-secondary-active-background-color: darken($sc-color-secondary, 6); /* editable({"type": "color", "label": "Secondary button active background color"}) */
+$sc-button-secondary-active-text-color: white; /* editable({"type": "color", "label": "Secondary button active text color"}) */
+$sc-button-secondary-active-border-color: $sc-button-secondary-active-background-color; /* editable({"type": "color", "label": "Secondary button active border color"}) */
+
+$sc-button-secondary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Secondary button text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+
+// Tertiary button variables
+$sc-button-tertiary-background-color: $sc-color-secondary; /* editable({"type": "color", "label": "Tertiary button background color"}) */
+$sc-button-tertiary-text-color: white; /* editable({"type": "color", "label": "Tertiary button text color"}) */
+$sc-button-tertiary-border-color: $sc-button-tertiary-background-color; /* editable({"type": "color", "label": "Tertiary button border color"}) */
+$sc-button-tertiary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Tertiary button border radius"}) */
+
+$sc-button-tertiary-hover-background-color: saturate(lighten($sc-color-secondary, 4), 4); /* editable({"type": "color", "label": "Tertiary button hover background color"}) */
+$sc-button-tertiary-hover-text-color: white; /* editable({"type": "color", "label": "Tertiary button hover text color"}) */
+$sc-button-tertiary-hover-border-color: $sc-button-tertiary-hover-background-color; /* editable({"type": "color", "label": "Tertiary button hover border color"}) */
+
+$sc-button-tertiary-active-background-color: darken($sc-color-secondary, 6); /* editable({"type": "color", "label": "Tertiary button active background color"}) */
+$sc-button-tertiary-active-text-color: white; /* editable({"type": "color", "label": "Tertiary button active text color"}) */
+$sc-button-tertiary-active-border-color: $sc-button-tertiary-active-background-color; /* editable({"type": "color", "label": "Tertiary button active border color"}) */
+
+$sc-button-tertiary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Tertiary button text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+
+// Quaternary button variables
+$sc-button-quaternary-background-color: $sc-color-theme-700; /* editable({"type": "color", "label": "Quaternary button background color"}) */
+$sc-button-quaternary-text-color: white; /* editable({"type": "color", "label": "Quaternary button text color"}) */
+$sc-button-quaternary-border-color: $sc-button-quaternary-background-color; /* editable({"type": "color", "label": "Quaternary button border color"}) */
+$sc-button-quaternary-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Quaternary button border radius"}) */
+
+$sc-button-quaternary-hover-background-color: $sc-color-header-link-hover; /* editable({"type": "color", "label": "Quaternary button hover background color"}) */
+$sc-button-quaternary-hover-text-color: white; /* editable({"type": "color", "label": "Quaternary button hover text color"}) */
+$sc-button-quaternary-hover-border-color: $sc-button-quaternary-hover-background-color; /* editable({"type": "color", "label": "Quaternary button hover border color"}) */
+
+$sc-button-quaternary-active-background-color: darken($sc-button-quaternary-background-color, 6); /* editable({"type": "color", "label": "Quaternary button active background color"}) */
+$sc-button-quaternary-active-text-color: white; /* editable({"type": "color", "label": "Quaternary button active text color"}) */
+$sc-button-quaternary-active-border-color: $sc-button-quaternary-active-background-color; /* editable({"type": "color", "label": "Quaternary button active border color"}) */
+
+$sc-button-quaternary-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Quaternary button text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+
+
+// Large button
+$sc-button-large-padding: $sc-padding-lv4 $sc-padding-lv6; /* editable({"type": "string", "label": "Large button padding"}) */
+$sc-button-large-font-size: $sc-font-size-l; /* editable({"type": "string", "label": "Large button font size"}) */
+$sc-button-large-line-height: 1; /* editable({"type": "string", "label": "Large button line height"}) */
+$sc-button-large-letter-spacing: 1px; /* editable({"type": "string", "label": "Large button letter spacing"}) */
+$sc-button-large-mobile-width: 100%; /* editable({"type": "string", "label": "Large button mobile width"}) */
+$sc-button-large-desktop-width: auto; /* editable({"type": "string", "label": "Large button desktop width"}) */
+
+// Medium button
+$sc-button-medium-padding: $sc-padding-lv2 $sc-padding-lv4; /* editable({"type": "string", "label": "Medium button padding"}) */
+$sc-button-medium-font-size: $sc-font-size-m; /* editable({"type": "string", "label": "Medium button font size"}) */
+$sc-button-medium-line-height: 1; /* editable({"type": "string", "label": "Medium button line height"}) */
+$sc-button-medium-letter-spacing: 0.5px; /* editable({"type": "string", "label": "Medium button letter spacing"}) */
+$sc-button-medium-mobile-width: 100%; /* editable({"type": "string", "label": "Medium button mobile width"}) */
+$sc-button-medium-desktop-width: auto; /* editable({"type": "string", "label": "Medium button desktop width"}) */
+
+// Small button
+$sc-button-small-padding: $sc-padding-lv2 $sc-padding-lv3; /* editable({"type": "string", "label": "Small button padding"}) */
+$sc-button-small-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Small button font size"}) */
+$sc-button-small-line-height: 1; /* editable({"type": "string", "label": "Small button line height"}) */
+$sc-button-small-letter-spacing: normal; /* editable({"type": "string", "label": "Small button letter spacing"}) */
+$sc-button-small-mobile-width: auto; /* editable({"type": "string", "label": "Small button mobile width"}) */
+$sc-button-small-desktop-width: auto; /* editable({"type": "string", "label": "Small button desktop width"}) */
+

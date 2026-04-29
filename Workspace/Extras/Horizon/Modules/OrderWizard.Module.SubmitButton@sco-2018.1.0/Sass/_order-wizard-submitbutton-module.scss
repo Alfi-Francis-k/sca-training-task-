@@ -1,0 +1,24 @@
+/* Edited for Horizon Theme */
+
+.order-wizard-submitbutton-container {
+	@extend .col-xs-12;
+	padding:0;
+	margin-bottom:$sc-padding-base * 4;
+	display:none;
+	background: none !important;
+
+	@media (min-width: $screen-sm-min) {
+		display:block;
+	}
+
+}
+.order-wizard-submitbutton-module-top{
+	display: none;
+}
+
+.order-wizard-submitbutton-module-button{
+	@extend .button-primary;
+	@extend .button-large;
+	@extend .button-generic;
+}
+

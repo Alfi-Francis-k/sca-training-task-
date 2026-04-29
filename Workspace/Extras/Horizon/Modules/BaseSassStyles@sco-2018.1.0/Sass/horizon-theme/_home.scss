@@ -1,0 +1,36 @@
+// Home variables
+$sc-home-cta-background-color-value: saturate(darken($sc-neutral-shade-700, 1), 11); /* editable({"type": "color", "label": "Home page slide caption background color"}) */
+$sc-home-cta-background-color: transparentize($sc-home-cta-background-color-value, 0.1); // used but not exposed to SMT tool
+$sc-home-cta-width: 340px; /* editable({"type": "string", "label": "Home page caption minimum width"}) */
+$sc-home-cta-title-size-mobile: $sc-font-size-xxl; /* editable({"type": "string", "label": "Home page caption size - mobile view"}) */
+$sc-home-cta-title-size: $sc-font-size-xxxl; /* editable({"type": "string", "label": "Home page caption size - desktop view"}) */
+$sc-home-cta-title-color: $sc-color-tertiary; /* editable({"type": "color", "label": "Home page caption title color"}) */
+$sc-home-cta-text-color: $sc-color-theme; /* editable({"type": "color", "label": "Home page caption text color"}) */
+$sc-home-cta-link-color: $sc-color-primary; /* editable({"type": "color", "label": "Home page caption link color"}) */
+
+// Home Hero Promotion variables
+$sc-hero-content-width: 20%; /* editable({"type": "string", "label": "Home page hero caption width"}) */
+
+// Home Infoblocks variables
+$sc-infoblock-height-mobile: 300px; /* editable({"type": "string", "label": "Home page infoblock caption height - mobile view"}) */
+$sc-infoblock-height-desktop: 550px; /* editable({"type": "string", "label": "Home page infoblock caption height - desktop view"}) */
+
+// Home Carousel variables
+$sc-carousel-content-width: 560px; /* editable({"type": "string", "label": "Home page carousel caption width"}) */
+$sc-carousel-title-size: $sc-font-size-xxxl; /* editable({"type": "string", "label": "Home page carousel caption title size"}) */
+$sc-home-carousel-icons-display: block; /* editable({
+	"type": "string",
+	"label": "Display Carousel Icons",
+	"options": [
+		{"value": "none", "text": "Hide"},
+		{"value": "block", "text": "Show"}
+	]
+}) */
+$sc-home-carousel-icons-color: $sc-color-primary; /* editable({"type": "color", "label": "Carousel Icons Color"}) */
+
+// Home Announcement variables
+$sc-home-announcement-background-color: saturate(darken($sc-neutral-shade-700, 1), 11); /* editable({"type": "color", "label": "Home page announcement background color"}) */
+$sc-home-announcement-text-color: $sc-color-tertiary; /* editable({"type": "color", "label": "Home page announcement text color"}) */
+$sc-home-announcement-text-size-mobile: $sc-font-size-xs; /* editable({"type": "string", "label": "Home page announcement text size - mobile view"}) */
+$sc-home-announcement-text-size-desktop: $sc-font-size-m; /* editable({"type": "string", "label": "Home page announcement text size - desktop view"}) */
+

@@ -1,0 +1,30 @@
+/* EDIT FOR HORIZON THEME */
+
+.cart-add-to-cart-button-button{
+	@extend .button-primary;
+    padding: 0 $sc-padding-lv2;
+    line-height: $sc-target-size-mobile - 2px;
+
+    @media (min-width: $screen-md-min) {
+        min-width: 160px;
+        margin-top: $sc-margin-lv3;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        width: 100%;
+    }
+}
+
+.cart-add-to-cart-button {
+	position: static;
+	margin-bottom: $sc-margin-lv3;
+
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 0;
+	}
+}
+
+.cart-add-to-cart-button-container {
+	@extend .col-sm-6;
+}
+

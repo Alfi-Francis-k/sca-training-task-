@@ -1,0 +1,29 @@
+// Footer variables
+$sc-footer-background-color: $sc-neutral-shade-700; /* editable({"type": "color", "label": "Footer background color"}) */
+$sc-footer-text-color: $sc-color-link-active; /* editable({"type": "color", "label": "Footer text color"}) */
+
+// Link variables
+$sc-footer-link-color: $sc-footer-text-color; /* editable({"type": "color", "label": "Footer link color"}) */
+$sc-footer-link-color-hover: $sc-color-senary; /* editable({"type": "color", "label": "Footer link hover color"}) */
+$sc-footer-link-color-active: $sc-color-theme-500; /* editable({"type": "color", "label": "Footer link active color"}) */
+$sc-footer-link-size: $sc-font-size-base; /* editable({"type": "string", "label": "Footer link desktop size"}) */
+$sc-footer-link-size-mobile: $sc-font-size-base; /* editable({"type": "string", "label": "Footer link mobile size"}) */
+
+// Headings variables
+$sc-footer-headings-color: $sc-color-quaternary; /* editable({"type": "color", "label": "Footer column headings color"}) */
+$sc-footer-headings-size: $sc-font-size-m; /* editable({"type": "string", "label": "Footer headings size"}) */
+
+// Input fields variables
+$sc-footer-fields-background-color: transparent; /* editable({"type": "color", "label": "Footer input background color"}) */
+$sc-footer-fields-border-color: $sc-footer-text-color; /* editable({"type": "color", "label": "Footer input border color"}) */
+$sc-footer-fields-text-color: $sc-color-quaternary; /* editable({"type": "color", "label": "Footer input text color"}) */
+
+// Buttons variables
+$sc-footer-buttons-background-color: $sc-color-quaternary; /* editable({"type": "color", "label": "Footer buttons background color"}) */
+$sc-footer-buttons-text-color: $sc-footer-text-color; /* editable({"type": "color", "label": "Footer buttons text color"}) */
+$sc-footer-buttons-border-color: $sc-color-quaternary; /* editable({"type": "color", "label": "Footer buttons border color"}) */
+$sc-footer-buttons-border-radius: $sc-border-radius;
+
+// Copyright color
+$sc-footer-copyright-text-color: $sc-footer-text-color; /* editable({"type": "color", "label": "Footer copyright text color"}) */
+

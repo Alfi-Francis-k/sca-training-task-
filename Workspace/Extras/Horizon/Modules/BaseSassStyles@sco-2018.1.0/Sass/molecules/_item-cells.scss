@@ -1,0 +1,79 @@
+.item-cell {
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-cell-link-image {
+	height:250px;
+	line-height:250px;
+}
+
+.item-cell-image {
+	vertical-align:middle;
+}
+
+.item-cell-title {
+	@extend .xsmall-title-navigable;
+	display: block;
+	text-align: left;
+	padding: $sc-padding-lv1 0;
+    font-size: $sc-font-size-base;
+    color: $sc-color-theme;
+
+    @media (min-width: $screen-desktop) {
+        font-size: $sc-font-size-xl;
+    }
+
+	a {
+		color: $sc-color-theme;
+	}
+}
+
+.item-cell-price {
+	@extend .small-price;
+	text-align: center;
+}
+
+.item-cell-rate {
+	text-align: center;
+}
+
+.item-cell-rate-filled {
+	@extend .icon-star-filled;
+}
+
+.item-cell-rate-empty {
+	@extend .icon-star;
+}
+
+///////////////////////////////////////////////////////////////
+//Quick view
+
+.item-cell-image-wrapper {
+	position: relative;
+}
+
+.item-cell-quick-view-wrapper {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 45%;
+}
+
+.item-cell:hover .item-cell-quick-view-wrapper {
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.item-cell-quick-view-link {
+	@extend .button-primary;
+	@extend .button-small;
+}
+
+.icon-cell-quick-view-icon {
+	@extend .fa;
+	@extend %fa-search;
+}
+

@@ -1,0 +1,82 @@
+// Edited for Horizon Theme
+
+.order-wizard-step-header{
+    @extend .wizard-step-header;
+    @extend .col-xs-12;
+	@extend .col-sm-7;
+	@extend .col-md-8;
+
+	background: transparent;
+	border-bottom: 1px solid $sc-color-theme-border;
+	text-align: center;
+	padding: $sc-padding-lv4 0 $sc-padding-lv4 0;
+	margin-bottom: $sc-margin-lv4;
+	display: inline-block;
+	float: left;
+
+    h2 {
+        color: $sc-color-theme !important;
+    }
+}
+
+.order-wizard-step-review-wrapper,
+.order-wizard-step-content-wrapper{
+	@extend .row;
+}
+
+.order-wizard-step-review-main,
+.order-wizard-step-content-main{
+	@extend .col-xs-12;
+	@extend .col-sm-7;
+	@extend .col-md-8;
+}
+
+.order-wizard-step-review-secondary,
+.order-wizard-step-content-secondary{
+	@extend .col-xs-12;
+	@extend .col-sm-5;
+	@extend .col-md-4;
+	float: right;
+}
+
+.order-wizard-step-content-secondary{
+    @media (min-width: $screen-md-min) {
+	    margin-bottom: $sc-margin-lv4;
+    }
+}
+
+.order-wizard-step-actions{
+	@extend .col-xs-12;
+	@extend .col-sm-7;
+    @extend .col-md-8;
+
+    @media (min-width: $screen-md-min) {
+        margin-top: $sc-margin-lv4;
+    }
+}
+
+.order-wizard-step-message{
+	@extend .wizard-step-message;
+	// margin-bottom: $sc-margin-lv6 !important;
+}
+
+.order-wizard-step-button-container{
+    @extend .wizard-step-button-container !optional;
+    margin-bottom: 0;
+	@media (min-width: $screen-md-min) {
+        margin-bottom: $sc-margin-lv3;
+    }
+}
+
+.order-wizard-step-button-continue {
+	@extend .wizard-step-button-continue;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.order-wizard-step-button-back{
+	@extend .wizard-step-button-back;
+}
+
+.order-wizard-step-guest-message{}
+.order-wizard-step-title{}
+

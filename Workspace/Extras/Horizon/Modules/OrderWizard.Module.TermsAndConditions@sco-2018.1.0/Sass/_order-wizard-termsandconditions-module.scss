@@ -1,0 +1,29 @@
+/* Edited for Horizon Theme */
+
+.order-wizard-termsandconditions-module-top-summary {
+	display:none;
+	margin-bottom: $sc-margin-lv4;
+	@media(min-width: $screen-sm-min){
+		display: block;
+	}
+}
+.order-wizard-termsandconditions-module-top,
+.order-wizard-termsandconditions-module-bottom{
+		display: none;
+}
+
+.order-wizard-termsandconditions-module-bottom{
+	margin-top: $sc-margin-lv4;
+}
+
+.order-wizard-termsandconditions-module-default{
+	display: block !important;
+	@media(min-width: $screen-sm-min){
+		float:right;
+		margin-bottom: $sc-margin-lv4;
+	}
+}
+
+.order-wizard-termsandconditions-module-label{}
+.order-wizard-termsandconditions-module-text{}
+

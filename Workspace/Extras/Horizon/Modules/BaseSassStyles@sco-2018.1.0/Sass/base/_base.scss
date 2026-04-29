@@ -1,0 +1,50 @@
+.main, .layout-container {
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+
+	background-color: $sc-color-theme-background;
+
+    @media (min-width: $sc-site-max-width) {
+        max-width: $sc-site-max-width;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $screen-md-min) {
+        height: auto; // do not use on mobile scrollbar
+    }
+}
+
+%sc-layout {
+	min-height: 100%;
+}
+
+%sc-footer {
+}
+
+.layout-overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.cms-content {
+	ul,
+	ol {
+		margin-left: $sc-margin-lv4;
+	}
+	ul {
+		li {
+			list-style: circle;
+		}
+	}
+	ol {
+		li {
+			list-style: decimal;
+		}
+	}
+}
+

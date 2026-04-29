@@ -1,0 +1,59 @@
+// Edited for Horizon Theme
+
+.product-details-quantity-options-title {
+	text-transform: uppercase;
+	margin-bottom: $sc-margin-lv2;
+    display: block;
+    font-weight:$sc-font-weight-normal;
+}
+.product-details-quantity-options {
+	margin-top:20px;
+    clear:both;
+    font-weight:$sc-font-weight-bold;
+
+	[data-validation-error="block"] {
+		margin-top: $sc-margin-lv2;
+	}
+}
+
+.product-details-quantity-options-title {
+	font-weight:$sc-font-weight-bold;
+}
+
+.product-details-quantity-options-title-help {
+	clear: both;
+	display: block;
+	font-weight:$sc-font-weight-light;
+	margin: $sc-margin-lv2 0;
+}
+
+.product-details-quantity-add,
+.product-details-quantity-remove{
+	@extend .button-secondary;
+	background-color:lighten($sc-color-theme, 20%);
+	border:1px solid lighten($sc-color-theme, 20%);
+	width: $sc-target-size-mobile;
+	height: $sc-target-size-mobile;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.product-details-quantity-value {
+    height: $sc-target-size-mobile;
+    padding:$sc-margin-lv2 $sc-padding-lv3 $sc-margin-lv2 $sc-padding-lv3 !important;
+    width: 90px !important;
+    text-align: right;
+    background-color: $sc-color-theme-500;
+    border: 0 !important;
+    -webkit-border-radius: 0 0 0 0!important;
+    border-radius: 0 0 0 0 !important;
+    font-weight:$sc-font-weight-normal;
+	display: inline-block;
+}
+
+.product-details-quantity-container {
+	@extend .quantity-input-container;
+}
+

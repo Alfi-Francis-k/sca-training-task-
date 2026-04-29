@@ -1,0 +1,37 @@
+// Edited for Horizon Theme
+
+.facets-browse-category-heading-list-header
+{
+	padding: $sc-padding-lv3;
+}
+
+.facets-browse-category-heading-list-header-with-image {
+	img {
+		width: 100%;
+	}
+}
+
+
+.facets-browse-category-heading-main-description
+{
+	width: auto;
+	margin: $sc-margin-lv2;
+
+	@media (min-width: $screen-md-min)
+	{
+		margin-left: $sc-margin-lv4;
+    }
+
+    & h1 {
+		// hide but not from screen readers
+		font-size: 0;
+		width: 1px;
+		height: 1px;
+	}
+}
+
+.facets-browse-category-heading-main-description h3
+{
+	text-transform: none;
+	font-weight: normal;
+}

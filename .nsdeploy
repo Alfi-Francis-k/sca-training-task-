@@ -1,0 +1,19 @@
+{
+    "credentials": {
+        "user_agent": "sc-extension-devtools/2025.1.0",
+        "authID": "training003",
+        "hostname": "TD3087684.restlets.api.netsuite.com",
+        "website": "2",
+        "domain": "scomm040826aj.nstraining1.com",
+        "webapp_id": "13018",
+        "ssp_folder": "13018",
+        "is_scis": false,
+        "key": "446765bc51e70086cf582d32f0486fc0a764354ffec6c983b94e63af331346c4",
+        "secret": "97fda39654d2f0cf3f0f9011d97616f96a3136e2c7659b867e57a1e1bbbcc566",
+        "account": "TD3087684",
+        "target_folder": {
+            "parentId": "-15",
+            "folderName": "Deploy_Extensions"
+        }
+    }
+}

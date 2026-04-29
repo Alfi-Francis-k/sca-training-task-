@@ -1,0 +1,184 @@
+// Edited for Horizon Theme
+
+.myaccount-layout {
+	@extend %sc-layout;
+
+	/* MYACCOUNT FIXED HEADER */
+	/* ADD PADDING-TOP WHEN FIXED HEADERS ENABLED */
+	.fixed-header + .myaccount-layout-breadcrumb {
+        @media (min-width: $screen-md-min) {
+            padding-top: 120px;
+        }
+    }
+}
+
+.myaccount-layout-container{
+	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+    @extend .container;
+    clear: both;
+}
+
+.myaccount-layout-header {
+	@include box-shadow(3px 0px 6px $sc-color-secondary);
+  margin-bottom: $sc-margin-lv5;
+}
+
+.myaccount-layout-row{
+    @extend .row;
+
+    #content {
+        padding-top: 0;
+    }
+}
+
+.myaccount-layout-main{
+	@extend .col-xs-12;
+	@extend .col-sm-9;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 70px;
+	}
+	.page-not-found {
+		overflow: hidden;
+	}
+}
+
+.myaccount-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.myaccount-layout-title{
+	margin-bottom: $sc-margin-lv4;
+	display:none;
+
+	@media (min-width: $screen-sm-min){
+        display: block;
+        margin-top: $sc-margin-lv4;
+        margin-bottom: $sc-margin-lv4;
+	}
+}
+
+.myaccount-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.myaccount-layout-side-nav{
+
+	@extend .col-sm-3;
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.force-hide-side-nav{
+
+	.myaccount-layout-side-nav{
+		display: none;
+	}
+
+	.myaccount-layout-title{
+		display: none;
+	}
+
+	.myaccount-layout-main{
+		@extend .col-sm-12;
+	}
+}
+
+.myaccount-layout-breadcrumb{
+    margin-bottom: $sc-margin-lv6;
+
+	.global-views-breadcrumb {
+		padding-right: 0;
+
+		.global-views-breadcrumb-item-active {
+			color: $sc-color-breadcrumb-active;
+			margin: auto;
+			font-size: 12px;
+			@media (min-width: $screen-xs-min){
+		        font-size: 14px;
+		    }
+		}
+
+		li {
+			white-space: nowrap;
+		}
+
+        li:nth-last-child(2) {
+            //display: none;
+        }
+        //li:nth-last-child(3),
+		li:last-child {
+			padding-right: $sc-padding-lv1;
+			@media (min-width: $screen-xs-min){
+            	padding-right: $sc-padding-lv3;
+			}
+        }
+	}
+}
+.myaccount-layout-error-placeholder{
+	.invoice-paid-list-no-records {
+		@extend h5;
+		text-align: center;
+		padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+	}
+	@media (max-width: $screen-xs-max) {
+		/* MISC SPACING */
+		.caseManagement {
+			padding: $sc-margin-lv5 0;
+		}
+		.Invoices,
+		.PaidInvoices {
+			padding-top: $sc-padding-lv5;
+		}
+		.quote-list-empty-section,
+		.return-authorization-list-empty-section,
+		.reorder-items-list-empty-section,
+		.invoice-open-list-no-records,
+		.invoice-paid-list-no-records {
+			padding: $sc-padding-lv3;
+		}
+		.AccountBalance .balance-actions {
+			margin-bottom: $sc-margin-lv3;
+		}
+
+		/* Case Buttons */
+		.case-list-header-button-new {
+			margin-top: 0;
+			top: 50px;
+		}
+	}
+}
+
+// CSS OVERRIDES TO FIX SPACING WHEN FIXED HEADER IS DISABLED VIA CONFIGURATION
+.theme-has-static-header {
+    .breadcrumb-container {
+        margin-top: $sc-margin-lv2;
+        margin-bottom: $sc-margin-lv2;
+        min-height: 0;
+
+        .global-views-breadcrumb {
+            position: static;
+        }
+    }
+    .facets-browse-category-heading-main-image {
+        position: static;
+        margin-top: $sc-margin-lv2;
+    }
+    .product-reviews-form,
+    .product-reviews-form-preview,
+    .product-reviews-form-confirmation {
+        padding-top: 0;
+    }
+    .shopping-layout-content .page-not-found {
+        margin-top: -40px;
+
+        .error-management-page-not-found {
+            margin-top: 0;
+        }
+    }
+}
+

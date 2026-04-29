@@ -1,0 +1,50 @@
+// Header variables
+$sc-header-height: 44px; /* editable({"type": "string", "label": "Header height containing text and right hand links"}) */
+$sc-header-padding-left: $sc-padding-lv6; /* editable({"type": "string", "label": "Header left padding for desktop only"}) */
+$sc-mobile-header-height: 60px; /* editable({"type": "string", "label": "Mobile header height"}) */
+$sc-header-background-color: saturate(darken($sc-neutral-shade-700, 1), 11); /* editable({"type": "color", "label": "Header background color"}) */
+$sc-header-text-color: $sc-color-header-link; /* editable({"type": "color", "label": "Header text color"}) */
+$sc-mobile-header-border-color: transparent; /* editable({"type": "color", "label": "Header border color - mobile view"}) */
+$sc-mobile-header-border-width: 0; /* editable({"type": "string", "label": "Header border width - mobile view"}) */
+
+// Header logo variables
+$sc-mobile-header-logo-width: 175px;
+$sc-desktop-header-logo-width: 210px;
+$sc-mobile-header-logo-top-margin: -44px;
+
+$sc-mobile-header-logo-left-padding: $sc-padding-lv2;
+$sc-desktop-header-logo-top-margin: 25px; /* editable({"type": "string", "label": "Logo Top Margin - desktop"}) */
+$sc-desktop-header-logo-bottom-margin: 0; /* editable({"type": "string", "label": "Logo Bottom Margin - desktop"}) */
+$sc-desktop-header-logo-left-margin: 15px; /* editable({"type": "string", "label": "Logo Left Margin - desktop"}) */
+
+// Header links variables
+$sc-header-link-text-color: $sc-color-header-link; /* editable({"type": "color", "label": "Header link color"}) */
+$sc-header-link-hover-text-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Header link hover color"}) */
+$sc-header-link-active-text-color: $sc-color-header-link-active; /* editable({"type": "color", "label": "Header link active color"}) */
+$sc-header-link-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Header link text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+$sc-header-search-icon-color: $sc-color-theme-700; /* editable({"type": "color", "label": "Search icon color"}) */
+$sc-header-search-icon-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Search icon hover color"}) */
+
+// Header cart variables
+$sc-header-cart-background-color: $sc-color-secondary; /* editable({"type": "color", "label": "Minicart background color"}) */
+$sc-header-cart-background-hover-color: saturate(lighten($sc-header-cart-background-color, 4), 4); /* editable({"type": "color", "label": "Minicart background hover color"}) */
+$sc-desktop-header-cart-open-text-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Minicart total items color when minicart menu visible"}) */
+
+// Header cart link variables
+$sc-header-cart-link-text-color: $sc-color-tertiary; /* editable({"type": "color", "label": "Minicart items color"}) */
+
+// Header icons
+$sc-mobile-header-icon-color: $sc-color-header-link; /* editable({"type": "color", "label": "Header icon color"}) */
+$sc-mobile-header-icon-active-color: $sc-color-header-link-active; /* editable({"type": "color", "label": "Header active icon color", "description": "Including minicart icon color when cart populated."}) */
+$sc-mobile-header-cart-icon-color: $sc-color-theme; /* editable({"type": "color", "label": "Minicart icon color"}) */
+$sc-mobile-header-cart-icon-active-color: $sc-color-tertiary; /* editable({"type": "color", "label": "Minicart icon active color"}) */
+

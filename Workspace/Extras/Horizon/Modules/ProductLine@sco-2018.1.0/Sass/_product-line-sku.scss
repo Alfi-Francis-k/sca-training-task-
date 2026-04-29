@@ -1,0 +1,15 @@
+/* Edited for Horizon Theme */
+
+.product-line-sku-container {
+	margin-bottom: $sc-margin-lv1;
+	color: $sc-color-senary;
+}
+.product-line-sku-value {
+	@extend .sc-sku-value;
+	color: $sc-color-senary;
+}
+.product-line-sku-label {
+	@extend .sc-sku-label;
+	color: $sc-color-senary;
+}
+

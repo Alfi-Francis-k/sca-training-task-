@@ -1,0 +1,41 @@
+/* Edited for Horizon Theme */
+
+.shopping-layout {
+	@extend %sc-layout;
+}
+
+.shopping-layout-header {
+	@include box-shadow(3px 0px 6px $sc-color-theme-700);
+	margin-bottom: $sc-margin-lv4;
+
+  	@media (min-width: $screen-sm-min){
+		margin-bottom: $sc-margin-lv3;
+	}
+}
+
+.shopping-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.shopping-layout-breadcrumb, .shopping-layout-notifications {
+	@extend .container;
+	width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.shopping-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.shopping-layout-content{
+	& .page-not-found {
+        min-height: 200px;
+        @media (min-width: $screen-md-min) {
+            min-height: 400px;
+            margin-top: 127px;
+        }
+    }
+}
+

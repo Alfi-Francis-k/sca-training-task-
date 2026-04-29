@@ -1,0 +1,184 @@
+// Edited for Horizon Theme
+
+.facets-item-cell-grid {
+    @extend .item-cell;
+    margin-bottom: 0;
+
+    /* this was a feature that seems to me more of an issue when compare and item badges extensions activated
+    &:hover {
+		[data-view="ItemDetails.Options"] {
+			display: block;
+		}
+	}*/
+
+    .item-details-option-color-tiles-container {
+    	@extend .color-picker-sm;
+    }
+
+    .item-details-option-color-label {
+    	display:none;
+    }
+
+    .product-views-price {
+        padding-bottom: $sc-padding-lv2;
+    }
+}
+
+.facets-item-cell-grid-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-grid-image-wrapper {
+	position:relative;
+    text-align:center;
+
+    .facets-item-cell-addtocompare {
+        margin-top: $sc-margin-lv2;
+    }
+
+    [data-view="ItemDetails.Options"] {
+		/* this was a feature that seems to me more of an issue when compare and item badges extensions activated
+        position: absolute;
+		bottom: 30px;
+		right: 0;
+		text-align: left;
+		background: white;
+		display: none;*/
+
+		.item-views-option-color, .item-views-option-dropdown-color {
+            margin: 10px;
+            min-width: 95px;
+		}
+
+        .item-views-option-dropdown-color select {
+            @extend .input-small;
+        }
+	}
+}
+
+.facets-item-cell-grid-link-image {}
+
+.facets-item-cell-grid-quick-view-icon {}
+
+.facets-item-cell-grid-stock {}
+
+.facets-item-cell-grid-add-to-cart-itemid {}
+
+.facets-item-cell-grid-details {
+    //display: flex;
+    //flex-direction: column;
+	text-align: center;
+	padding: $sc-padding-lv4;
+
+    @media (min-width: $screen-md-min) {
+        //display: block;
+        padding: $sc-padding-lv2 $sc-padding-lv6 $sc-padding-lv6;
+        margin-bottom: $sc-margin-lv6;
+    }
+
+    // add to cart on facets
+    [data-view="AddToCart"] {
+        @media (min-width: $screen-sm-min) {
+            display: block;
+            text-align: center;
+        }
+    }
+    .cart-add-to-cart-button-container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @media (min-width: $screen-sm-min) {
+            float: none;
+            display: inline-block;
+            text-align: center;
+            width: auto;
+        }
+    }
+    .facets-item-cell-grid-stock {
+        text-align: center;
+        margin-top: $sc-margin-lv1;
+
+        .pickup-in-store-fulfillment-options {
+            margin-top: $sc-margin-lv2;
+        }
+    }
+}
+
+.facets-item-cell-grid-image {
+	max-width: 100%;
+    width: auto;
+}
+
+.facets-item-cell-grid-title {
+	@extend .item-cell-title;
+    text-align: center;
+}
+
+.facets-item-cell-grid-price {
+	@extend .small-price;
+}
+
+.facets-item-cell-grid-rating {
+	text-align:center;
+	display: inline-block;
+    padding: $sc-padding-base 0;
+    order: 2;
+    // margin-bottom: $sc-padding-lv4;
+    //
+    // @media (min-width: $screen-desktop) {
+    //     float: right;
+    //     margin-bottom: 0;
+    // }
+}
+
+.facets-item-cell-grid-add-to-cart-quantity {
+	@extend .input-small;
+
+	display: inline-block;
+	float: right;
+	color: $sc-color-theme;
+	background-color: $sc-color-theme-content-background;
+	border: 1px solid $sc-color-theme-content-background;
+	max-width: 80px;
+	outline: none;
+	margin-right: $sc-margin-lv2;
+
+	@media (max-width: 1320px) {
+		max-width: none;
+		width: calc(50% - 5px);
+		float: left;
+	}
+
+    @media (max-width: $screen-md-min) {
+        width: calc(40% - 5px);
+    }
+}
+
+.facets-item-cell-grid-add-to-cart-button {
+	@extend .button-primary;
+	@extend .button-medium;
+	float: right;
+
+	@media (max-width: 1320px) {
+		width: calc(50% - 5px);
+		float: right;
+	}
+
+    @media (max-width: $screen-md-min) {
+        width: calc(60% - 5px);
+    }
+}
+
+.facets-item-cell-grid-add-to-cart {
+	@media (max-width: 1320px) {
+		padding-top: $sc-padding-lv3;
+		clear: both;
+	}
+}
+
+.facets-item-cell-grid-stock-message {}
+

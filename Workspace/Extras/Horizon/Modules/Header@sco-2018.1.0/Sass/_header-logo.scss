@@ -1,0 +1,62 @@
+// Edited for Horizon Theme
+
+.header-logo-wrapper {
+    //float: left;
+    //padding-left: $sc-mobile-header-logo-left-padding;
+    //width: $sc-mobile-header-logo-width;
+    //margin-top: $sc-mobile-header-logo-top-margin;
+    left: 60px;
+    margin-top: $sc-mobile-header-logo-top-margin;
+    position: relative;
+    max-width: 210px;
+    float: left;
+
+      //max-width: 34%;
+      //line-height: 55px;
+
+    @media(min-width: $screen-xs-max) {
+        //width: $sc-desktop-header-logo-width;
+        img {
+          max-width: $sc-desktop-header-logo-width;
+        }
+        // margin-top: $sc-desktop-header-logo-top-margin;
+    }
+
+    img {
+      max-height: 150px;
+      max-width: $sc-mobile-header-logo-width;
+        @media(max-width: $screen-xs-min) {
+          max-width: 100px;
+          margin-top: 5px;
+        }
+    }
+
+    @media(min-width: $screen-md-min) {
+      padding-left: 0;
+      position: relative;
+      z-index: 1000;
+      max-width: 210px;
+      float: left;
+      left: inherit;
+      top: inherit;
+      margin: 0;
+      img {
+        max-width: 100%;
+        margin: $sc-desktop-header-logo-top-margin 0 $sc-desktop-header-logo-bottom-margin $sc-desktop-header-logo-left-margin;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      float: left;
+      clear: both;
+      height: 1px;
+      width: 1px;
+    }
+}
+
+.header-logo {}
+.header-logo-image {}
+.header-logo-sitename{}
+

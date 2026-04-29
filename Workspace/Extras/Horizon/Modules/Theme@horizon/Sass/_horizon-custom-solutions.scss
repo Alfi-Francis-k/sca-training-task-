@@ -1,0 +1,165 @@
+/* MISC SOLUTION MODULES STYLES */
+/* Hashtag Gallery Module Styles */
+#hashtag-gallery {
+    @extend .container-fluid;
+}
+
+/* LookBook Module Styles */
+.look-title,
+.look-divider-desktop {
+    display: none;
+}
+.look-subtitle {
+    margin-top: 30px;
+}
+/* Look Books Items Styles */
+.itemdetails-lookitems-header {
+    text-align: center;
+}
+
+/* EFFICIENCIES STORE LOCATOR */
+.storelocator-container,
+.stores-store-locator-details-container {
+    width: 100%;
+    margin: $sc-margin-lv2 0;
+    padding: 0;
+}
+
+.store-locator-search-buttons-container-geolocalization {
+    .store-locator-search-button-current {
+        @extend .button-tertiary;
+    }
+}
+
+/* Infinite Scroll */
+.infinite-scroll-top {
+    background: $sc-color-theme;
+}
+
+.infinite-scroll-top-icon {
+    color: $sc-color-tertiary;
+    position: relative;
+    top: 3px;
+}
+
+/* Back In Stock Module Styles */
+.back-in-stock-notification-placeholder {
+    .back-in-stock-notification-show-form-button {
+        @extend .button-secondary;
+        font-size: $sc-font-size-l;
+        font-weight:$sc-font-weight-bold;
+        width: 100%;
+        @media (min-width: $screen-lg-min) {
+            width: calc(70% - 5px);
+        }
+    }
+    .back-in-stock-notification-form-wrapper {
+        @media (min-width: $screen-lg-min) {
+            width: calc(70% - 5px);
+        }
+    }
+}
+
+/* Blog */
+.blog-details-divider-desktop {
+    display: block;
+    margin: 25px 0;
+    clear: both;
+    height: 1px;
+}
+
+/* Size Chart */
+.item-details-size-chart-link {
+    display: inline-block;
+    margin: 0 0 $sc-margin-lv3;
+}
+
+/* Compare Products */
+.compare-items-title {
+    color: $sc-color-copy-light !important;
+    top: 0 !important;
+}
+.compare-items-container-hide-button {
+    color: $sc-color-copy-light !important;
+    margin-top: 7px;
+}
+.compare-items-hide-container {
+    background-color: $sc-neutral-shade-700 !important;
+}
+.compare-items-container-hide-button {
+  @extend %fa-angle-down;
+}
+.addedfromcomparison-remove-button-icon {
+    color: $sc-neutral-shade-0 !important;
+}
+
+/* UI Extensions */
+/* CCT COLUMNS */
+.home {
+    .columnscct-layout {
+        width: auto;
+        margin-left: $sc-margin-lv3;
+        margin-right: $sc-margin-lv3;
+
+        .columnscct-column-container {
+            padding-left: $sc-padding-lv3;
+            padding-right: $sc-padding-lv3;
+        }
+    }
+}
+
+/* CCT LOGO LIST, SLIDESHOW, PHOTO GALLERY & TESTIMONIALS */
+// USED TO SHARE STYLES BETWEEN EXTENSIONS
+#cct_netsuite_logolist,
+#cct_netsuite_slideshowcct,
+#cct_netsuite_photogallerycct,
+#ns_sc_ext_ctestimonialscct {
+    .logolistcct-prev-icon {
+        left: 0;
+    }
+    .logolistcct-next-icon {
+        right: 0;
+    }
+
+    .slideshow-prev-icon,
+    .prev-icon,
+    .testimonial-prev-icon {
+        left: 30px;
+    }
+    .slideshow-next-icon,
+    .next-icon,
+    .testimonial-next-icon {
+        right: 30px;
+    }
+
+    .logolistcct-prev-icon,
+    .logolistcct-next-icon,
+    .slideshow-prev-icon,
+    .slideshow-next-icon,
+    .prev-icon,
+    .next-icon,
+    .testimonial-prev-icon,
+    .testimonial-next-icon {
+        color: $sc-home-carousel-icons-color;
+    }
+
+    .bx-pager {
+        a {
+            opacity: 0.5;
+            color: $sc-home-carousel-icons-color !important;
+            background-color: $sc-home-carousel-icons-color !important;
+            &.active {
+                opacity: 1;
+                background-color: $sc-home-carousel-icons-color;
+            }
+        }
+    }
+}
+
+/* CCT FEATURED PRODUCT */
+.featuredproductcct-layout {
+    .product-content {
+        padding-left: $sc-padding-lv3;
+        padding-right: $sc-padding-lv3;
+    }
+}
