@@ -1,0 +1,105 @@
+{
+    "name": "salesreps",
+    "fantasyName": "salesrep",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=25.1.0",
+        "SCS": ">=25.1.0"
+    },
+    "version": "1.0.0",
+    "description": "salesrep task",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/salesrepr.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/salesrepr/Configuration/salesrepr.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/salesrepr/Templates/jj_salesreps_salesrepr.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/salesrepr/Templates/jj_salesreps_salesrepr.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/salesrepr/Templates/jj_salesreps_salesrepr.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/salesrepr/Sass/_salesreps-salesrepr.scss",
+            "myaccount": "Modules/salesrepr/Sass/_salesreps-salesrepr.scss",
+            "checkout": "Modules/salesrepr/Sass/_salesreps-salesrepr.scss"
+        },
+        "files": [
+            "Modules/salesrepr/Sass/_salesreps-salesrepr.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.js",
+            "myaccount": "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.js",
+            "checkout": "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.js",
+                    "Modules/salesrepr/JavaScript/salesrepr.View.js",
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.Model.js",
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.js",
+                    "Modules/salesrepr/JavaScript/salesrepr.View.js",
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.Model.js",
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.js",
+                    "Modules/salesrepr/JavaScript/salesrepr.View.js",
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.Model.js",
+                    "Modules/salesrepr/JavaScript/JJ.salesreps.salesrepr.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/salesrepr/SuiteScript/JJ.salesreps.salesrepr.js",
+        "files": [
+            "Modules/salesrepr/SuiteScript/JJ.salesreps.salesrepr.js",
+            "Modules/salesrepr/SuiteScript/salesrepr.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/salesrepr/SuiteScript2/salesrepr.Service.ss"
+        ]
+    }
+}
