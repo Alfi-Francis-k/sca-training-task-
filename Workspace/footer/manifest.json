@@ -1,0 +1,105 @@
+{
+    "name": "footer",
+    "fantasyName": "footer",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=25.1.0",
+        "SCS": ">=25.1.0"
+    },
+    "version": "1.0.0",
+    "description": "footer config",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/footer.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/footer/Configuration/footer.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/footer/Templates/jj_footer_footer.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/footer/Templates/jj_footer_footer.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/footer/Templates/jj_footer_footer.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/footer/Sass/_footer-footer.scss",
+            "myaccount": "Modules/footer/Sass/_footer-footer.scss",
+            "checkout": "Modules/footer/Sass/_footer-footer.scss"
+        },
+        "files": [
+            "Modules/footer/Sass/_footer-footer.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/footer/JavaScript/JJ.footer.footer.js",
+            "myaccount": "Modules/footer/JavaScript/JJ.footer.footer.js",
+            "checkout": "Modules/footer/JavaScript/JJ.footer.footer.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/footer/JavaScript/JJ.footer.footer.js",
+                    "Modules/footer/JavaScript/footer.View.js",
+                    "Modules/footer/JavaScript/JJ.footer.footer.Model.js",
+                    "Modules/footer/JavaScript/JJ.footer.footer.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/footer/JavaScript/JJ.footer.footer.js",
+                    "Modules/footer/JavaScript/footer.View.js",
+                    "Modules/footer/JavaScript/JJ.footer.footer.Model.js",
+                    "Modules/footer/JavaScript/JJ.footer.footer.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/footer/JavaScript/JJ.footer.footer.js",
+                    "Modules/footer/JavaScript/footer.View.js",
+                    "Modules/footer/JavaScript/JJ.footer.footer.Model.js",
+                    "Modules/footer/JavaScript/JJ.footer.footer.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/footer/SuiteScript/JJ.footer.footer.js",
+        "files": [
+            "Modules/footer/SuiteScript/JJ.footer.footer.js",
+            "Modules/footer/SuiteScript/footer.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/footer/SuiteScript2/footer.Service.ss"
+        ]
+    }
+}

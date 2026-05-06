@@ -1,0 +1,146 @@
+{
+    "type": "object",
+    "properties": {
+        "footer.showLegacyNewsletter": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "boolean",
+            "title": "Show Legacy Newsletter",
+            "description": "Show Legacy Newsletter in Footer",
+            "default": true
+        },
+        "footer.title": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Upper Section Title",
+            "default": "Newsletter Sign Up"
+        },
+        "footer.newsletterText": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Newsletter Sub-text",
+            "default": "Sign up to get new and exclusive offers to your inbox!"
+        },
+        "footer.newsletterButton": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Newsletter Button Label",
+            "default": "Subscribe"
+        },
+        "footer.copyrightHide": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "boolean",
+            "title": "Hide Copyright",
+            "default": false
+        },
+        "footer.copyrightCompanyName": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Company Name",
+            "default": "Balaji Trading, Inc."
+        },
+        "footer.copyrightPhoneNum": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Phone Number",
+            "default": "909-444-7999"
+        },
+        "footer.copyrightEmailId": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Email Address",
+            "default": "info@balajiwireless.com"
+        },
+        "footer.copyrightStoreName": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Store Name",
+            "default": "BALAJI"
+        },
+        "footer.copyrightAddress": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Address",
+            "default": "NASHVILLE DISTRIBUTION CENTER, 5301 Centre Pointe Dr, La Vergne, IN 37086"
+        },
+        "footer.copyrightInitialYear": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Initial Year",
+            "default": "2024"
+        },
+        "footer.socialLinksTitle": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "string",
+            "title": "Social Media Links Title",
+            "default": "SOCIAL"
+        },
+        "footer.socialLinks": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "array",
+            "title": "Social Media Links",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "icon": {
+                        "type": "string",
+                        "title": "Icon Name (e.g. facebook, twitter, instagram, youtube)"
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "URL"
+                    }
+                }
+            }
+        },
+        "footer.multiCollLinks": {
+            "group": "extensions",
+            "subtab": "footerSubtab",
+            "type": "array",
+            "title": "Multi-column Links",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text"
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL"
+                    },
+                    "datatouchpoint": {
+                        "type": "string",
+                        "title": "Data Touchpoint"
+                    },
+                    "datahashtag": {
+                        "type": "string",
+                        "title": "Data Hashtag"
+                    },
+                    "column": {
+                        "type": "string",
+                        "title": "Column",
+                        "enum": [
+                            "Column 1",
+                            "Column 2",
+                            "Column 3",
+                            "Column 4"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
