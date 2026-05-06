@@ -24,6 +24,8 @@ define("JJ.contactforms.contactformm.View", [
     events: {
       "click [data-action='submit-form']": "submitForm",
       "click [data-action='cancel-form']": "clearForm",
+      "blur input": "validateField",
+      "keyup input": "removeError",
     },
 
     // 🔹 Submit Form
@@ -39,19 +41,41 @@ define("JJ.contactforms.contactformm.View", [
         email: this.$('[name="email"]').val(),
       };
 
+      this.formValues = data;
+
       var errors = this.validateForm(data);
 
       if (Object.keys(errors).length > 0) {
+
+        // Clear only error fields
+        if (errors.firstname) {
+          this.formValues.firstname = "";
+        }
+
+        if (errors.lastname) {
+          this.formValues.lastname = "";
+        }
+
+        if (errors.phone) {
+          this.formValues.phone = "";
+        }
+
+        if (errors.email) {
+          this.formValues.email = "";
+        }
+
         this.formErrors = errors;
         this.successMessage = false;
         this.render();
         return;
+
+
       }
 
 
-        this.model.save(data)
+      this.model.save(data)
         .done(function (response) {
-          console.log('reponse from creating new request',response)
+          console.log('reponse from creating new request', response)
           if (response.success) {
             alert("Contact created successfully");
             self.clearForm();
@@ -59,7 +83,7 @@ define("JJ.contactforms.contactformm.View", [
           }
         })
         .fail(function (error) {
-         
+
 
           var message = "Something went wrong";
 
@@ -67,8 +91,8 @@ define("JJ.contactforms.contactformm.View", [
             try {
               var res = JSON.parse(error.responseText);
               message = res.message || message;
-            //   customer=res.customerid
-            } catch (e) {}
+              //   customer=res.customerid
+            } catch (e) { }
           }
 
           alert(message);
@@ -105,11 +129,86 @@ define("JJ.contactforms.contactformm.View", [
       return errors;
     },
 
-    // 🔹 Cancel Button
+    validateField: function (e) {
+
+      var field = e.currentTarget.name;
+      var value = this.$(e.currentTarget).val();
+
+      // initialize formValues
+      this.formValues = this.formValues || {};
+
+      this.formValues[field] = value;
+
+      // remove old error
+      delete this.formErrors[field];
+
+      // validation
+      if (field === "firstname") {
+
+        if (!value) {
+          this.formErrors.firstname = "First name is required";
+        } else if (!/^[A-Za-z\s]+$/.test(value)) {
+          this.formErrors.firstname = "Only letters allowed";
+        }
+
+      }
+
+      if (field === "lastname") {
+
+        if (!value) {
+          this.formErrors.lastname = "Last name is required";
+        } else if (!/^[A-Za-z\s]+$/.test(value)) {
+          this.formErrors.lastname = "Only letters allowed";
+        }
+
+      }
+
+      if (field === "email") {
+
+        if (!value) {
+          this.formErrors.email = "Email is required";
+        } else if (!/^\S+@\S+\.\S+$/.test(value)) {
+          this.formErrors.email = "Invalid email format";
+        }
+
+      }
+
+      if (field === "phone") {
+
+        if (!value) {
+          this.formErrors.phone = "Phone number is required";
+        } else if (!/^[0-9]{10}$/.test(value)) {
+          this.formErrors.phone = "Enter valid 10 digit number";
+        }
+
+      }
+
+      this.render();
+    },
+
+
+    removeError: function (e) {
+
+      var field = e.currentTarget.name;
+
+      if (this.formErrors[field]) {
+        delete this.formErrors[field];
+        this.render();
+      }
+    },
+
     clearForm: function () {
-      this.$("input").val("");
+
+      this.formValues = {
+        firstname: "",
+        lastname: "",
+        phone: "",
+        email: ""
+      };
+
       this.formErrors = {};
       this.successMessage = false;
+
       this.render();
     },
 
@@ -118,7 +217,9 @@ define("JJ.contactforms.contactformm.View", [
         pageHeader: "Contact Form",
         errors: this.formErrors,
         successMessage: this.successMessage,
+        values: this.formValues || {}
       };
     },
+
   });
 });

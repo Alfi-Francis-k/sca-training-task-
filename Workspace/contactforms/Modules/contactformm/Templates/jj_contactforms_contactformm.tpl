@@ -12,7 +12,11 @@
 
     <!-- First Name -->
     <div class="form-group">
-      <input type="text" name="firstname" placeholder='First Name ' class="form-control" />
+      <input type="text"
+       name="firstname"
+       value="{{values.firstname}}"
+       placeholder="First Name"
+       class="form-control" />
 
       {{#if errors.firstname}}
         <small class="text-danger">{{errors.firstname}}</small>
@@ -21,7 +25,11 @@
 
     <!-- Last Name -->
     <div class="form-group">
-      <input type="text" name="lastname" placeholder='Last Name' class="form-control" />
+      <input type="text"
+       name="lastname"
+       value="{{values.lastname}}"
+       placeholder="Last Name"
+       class="form-control" />
 
       {{#if errors.lastname}}
         <small class="text-danger">{{errors.lastname}}</small>
@@ -31,7 +39,11 @@
     <!-- Phone -->
     <div class="form-group">
 
-      <input type="text" name="phone" placeholder='Phone Number' class="form-control" />
+      <input type="text"
+       name="phone"
+       value="{{values.phone}}"
+       placeholder="Phone Number"
+       class="form-control" />
 
       {{#if errors.phone}}
         <small class="text-danger">{{errors.phone}}</small>
@@ -40,8 +52,12 @@
 
     <!-- Email -->
     <div class="form-group">
-      <input type="email" name="email" placeholder='Email'class="form-control" />
-
+      <input type="email"
+       name="email"
+       value="{{values.email}}"
+       placeholder="Email"
+       class="form-control" />
+       
       {{#if errors.email}}
         <small class="text-danger">{{errors.email}}</small>
       {{/if}}
